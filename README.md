@@ -10,6 +10,9 @@
 ### Built with
 
 -   Semantic HTML5 markup
--   CSS3 with Animations
+-   SASS
 -   Vanilla JS
+-   Javascript Module
+-   GSAP
+-   GSAP Text Plugin
 -   Mobile-first workflow
