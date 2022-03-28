@@ -20,6 +20,9 @@ diceButtonRotateTimeline.to(diceButton, {
       } catch (error) {
          console.log(error)
       }
+      adviceTextTween()
+      adviceNumberTween()
+      console.log(adviceSlip)
    },
    onComplete: () => {
       diceButton.classList.remove('active')
@@ -71,10 +74,16 @@ let adviceNumberTween = () => {
       text: {
          value: () => {
             if (adviceSlip.id !== undefined) {
-               return adviceSlip.id < 100 ? `0${adviceSlip.id}` : adviceSlip.id
-            } else {
-               return "000"
+               // return adviceSlip.id < 100 ? `0${adviceSlip.id}` : adviceSlip.id
+               if (adviceSlip.id < 10 && adviceSlip.id < 100) {
+                  return `00${adviceSlip.id}`
+               }
+               if (adviceSlip.id >= 10 && adviceSlip.id < 100) {
+                  return `0${adviceSlip.id}`
+               }
+               return adviceSlip.id
             }
+            return "000"
          }
       },
       ease: "power2",
@@ -82,4 +91,4 @@ let adviceNumberTween = () => {
    })
 }
 
-export { diceButtonRotateTimeline, adviceTextTween, adviceNumberTween }
+export { diceButtonRotateTimeline }
