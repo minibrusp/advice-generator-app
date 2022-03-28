@@ -22,7 +22,6 @@ diceButtonRotateTimeline.to(diceButton, {
       }
       adviceTextTween()
       adviceNumberTween()
-      console.log(adviceSlip)
    },
    onComplete: () => {
       diceButton.classList.remove('active')
