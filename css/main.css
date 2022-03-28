@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  color: #cee3e9;
+  background-color: #1f2632;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95vh;
+  text-align: center;
+}
+
+.advice {
+  margin: 5vw;
+  padding: 1.5625rem;
+  background-color: #323a49;
+  border-radius: 10px;
+  max-width: 540px;
+}
+
+@media screen and (min-width: 750px) {
+  .advice {
+    margin: 1rem;
+    padding: 40px;
+    border-radius: 15px;
+  }
+}
+
+.advice__text h1 {
+  color: #52ffa8;
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 750px) {
+  .advice__text h1 {
+    font-size: 13px;
+  }
+}
+
+.advice__text h1 span {
+  display: inline-block;
+}
+
+.advice__text__quote p {
+  font-size: 24px;
+  margin: 1.7rem auto;
+}
+
+@media screen and (min-width: 750px) {
+  .advice__text__quote p {
+    font-size: 28px;
+  }
+}
+
+.advice__divider picture {
+  display: block;
+}
+
+.advice__divider picture img {
+  width: 100%;
+  display: block;
+  margin: 1.5rem auto 2.5rem auto;
+}
+
+.advice__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.advice__button button {
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #52ffa8;
+  position: absolute;
+  bottom: -3.4rem;
+  -webkit-transition: 0.5s -webkit-box-shadow ease-in-out;
+  transition: 0.5s -webkit-box-shadow ease-in-out;
+  transition: 0.5s box-shadow ease-in-out;
+  transition: 0.5s box-shadow ease-in-out, 0.5s -webkit-box-shadow ease-in-out;
+}
+
+@media screen and (min-width: 750px) {
+  .advice__button button {
+    bottom: -4.5rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .advice__button button:hover {
+    -webkit-box-shadow: 0 0.0625rem 1.25rem #52ffa8;
+            box-shadow: 0 0.0625rem 1.25rem #52ffa8;
+  }
+}
+
+.advice__button button img {
+  -webkit-transition: 0.5s -webkit-transform ease;
+  transition: 0.5s -webkit-transform ease;
+  transition: 0.5s transform ease;
+  transition: 0.5s transform ease, 0.5s -webkit-transform ease;
+}
+
+.advice__button button.active {
+  -webkit-box-shadow: 0 0.0625rem 1.25rem #52ffa8;
+          box-shadow: 0 0.0625rem 1.25rem #52ffa8;
+}
+
+.advice__button button:active img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.attribution a {
+  color: #52ffa8;
+  opacity: 0.9;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.attribution a:hover {
+  color: #323a49;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */
